@@ -19,5 +19,17 @@ public class EtherController {
         return ResponseEntity.ok().build();
     }
 
+    @GetMapping("/address")
+    public ResponseEntity<Void> getBlockAddress() throws IOException {
+        etherService.getBlockAddress();
+        return ResponseEntity.ok().build();
+    }
+
+    @GetMapping("/balance")
+    public ResponseEntity<Void> getBlockBalance() throws IOException {
+        etherService.getBlockBalance();
+        return ResponseEntity.ok().build();
+    }
+
 
 }
