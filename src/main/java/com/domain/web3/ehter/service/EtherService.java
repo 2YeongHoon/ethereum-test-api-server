@@ -49,7 +49,7 @@ public class EtherService {
     }
 
     public void getBlockBalance() throws IOException {
-        final String address = "0xD6300B257c360A6aA6a96Cf041cd05425612F2Ff";
+        final String address = "VALUE";
         // 이더리움 잔액 조회
         EthGetBalance ethGetBalance = web3j.ethGetBalance(address, org.web3j.protocol.core.DefaultBlockParameterName.LATEST).send();
         BigInteger balanceInWei = ethGetBalance.getBalance();
